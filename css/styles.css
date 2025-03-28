@@ -1,9 +1,12 @@
 body {
     font-family: "Montserrat", sans-serif;
+    background: #fafafa;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -11,6 +14,13 @@ a {
 }
 
 button {color: pointer;}
+
+p,h1,h2,h3,h4,h5,h6 {margin: 0;}
+
+.container {width: 1166px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;}
 
 .section-title {font-weight: 600;
     font-size: 24px;
@@ -22,9 +32,10 @@ button {color: pointer;}
 
 
 
-.header {}
+.header {padding-top: 28px;
+    padding-bottom: 28px;}
 
-.header-navigation {}
+.header-navigation {display: flex; gap: 90px; }
 
 .header-logo {
     
@@ -33,13 +44,19 @@ button {color: pointer;}
             line-height: 1.11;
         letter-spacing: -0.03em;
         color: #111;
+        margin-right: 90px;
 }
 
 .header-logo-italic {
     font-style: italic;
 }
 
-.header-menu-list {}
+.header-container { display: flex; 
+    justify-content: space-between;}
+
+.header-menu-list {display: flex;
+    margin-left: auto;
+    gap: 24px;}
 
 .header-menu-items {}
 
@@ -55,8 +72,16 @@ button {color: pointer;}
 .header-menu-link:focus {color: #fd9222;}
 
 .hero {
+    border-radius: 30px;
+        width: 1200px;
+        height: 600px;
 background-color: #1e1823;;
+margin-bottom: 72px;
 }
+
+
+.hero-wrapper {padding: 375px 40px 40px 40px;}
+
 
 .hero-title {
 font-weight: 500;
@@ -64,26 +89,50 @@ font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
     color: #fff;
+    margin-bottom: 32px;
+    min-width: 404px;
+
 }
 
 .hero-btn {
+   
     font-weight: 600;
         font-size: 14px;
         color: #fff;
+        border-radius: 100px;
+            padding: 14px 40px;
+           border: none;
+            background-color: #fd9222;
+            margin-right: 14px;
+            
 }
 
 .hero-anchor-link {
+    border: 1px solid #fff;
+        border-radius: 100px;
+        background-color: transparent;
+        padding: 14px 40px;
+       
     font-weight: 600;
         font-size: 14px;
         color: #fff;
+        
 }
 
 .hero-scroll-link {
+    
     font-weight: 500;
         font-size: 14px;
         line-height: 1.28;
         letter-spacing: -0.03em;
         color: #fff;
+        margin-left: auto;
+       
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 
@@ -92,16 +141,23 @@ font-weight: 500;
 
 .features {
     background-color: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.features-list {}
+.features-list {display: flex; 
+    padding-left: 36px;
+    padding-right: 36px;
+    gap: 70px;
+}
 
-.features-item {}
+.features-item {flex-basis: calc((100% - 140px) / 3);}
 
 .features-subtitle {
 font-weight: 600;
     font-size: 18px;
     color: #fff;
+    margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -111,12 +167,14 @@ font-weight: 600;
         color: rgba(255, 255, 255, 0.7);
 }
 
-.taste {
-
+.taste {padding-top: 100px;
+padding-bottom: 50px;
 }
 
 .taste-title {
-    
+    max-width: 411px;
+    margin-bottom: 28px;
+    margin: 0 auto;
 }
 
 .accent {color: #fd9222;}
@@ -126,11 +184,22 @@ font-weight: 600;
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
-    color: #111;}
+    color: #111;
+margin-bottom: 50px;
+max-width: 486px;
+margin-bottom: 50px;
+margin: 0 auto;}
 
-.taste-list {}
+.taste-list { display: flex;
+gap: 19px;}
 
-.taste-item {}
+.taste-item {border: 1px solid #fd9222;
+    border-radius: 15px;
+    
+padding :20px 32px;
+
+width: calc((100% - 57px) / 4);
+}
 
 .taste-image {}
 
@@ -142,20 +211,30 @@ font-weight: 600;
     color: #fff;}
 
 
-.made {}
+.made {padding-top: 50px;
+padding-bottom: 50px;}
 
-.made-title {}
+.made-title {margin-bottom: 50px;}
+
+.made-content {border-radius: 15px;
+    width: 516px;
+    height: 400px;
+background-color: #fff;
+padding: 32px;}
 
 .made-image {}
 
 .made-subtitle {font-weight: 600;
     font-size: 18px;
     line-height: 1.33333;
-    color: #111;}
+    color: #111;
+margin-bottom: 28px;}
 
 .made-list {}
 
-.made-item {}
+.made-item {margin-bottom: 24px;
+}
+.made-item:last-child {margin-bottom: 0;}
 
 .made-text {font-weight: 400;
     font-size: 14px;
